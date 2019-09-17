@@ -63,7 +63,7 @@ let derve = document.getElementById('derve');
 let i = 0,
 timer = 0,
 str = '花间一壶酒，独酌无相亲。举杯邀明月，对影成三人。月既不解饮，影徒随我身。暂伴月将影，行乐须及春。我歌月徘徊，我舞影零乱。醒时同交欢 ，醉后各分散。永结无情游，相期邈云汉。';
-var word = (function typing(){
+setInterval(function typing(){
     if(i <= str.length){
         derve.innerHTML = str.slice(0,i++);
         timer = setTimeout('typing()',200);
@@ -73,8 +73,7 @@ var word = (function typing(){
         },2000);
         clearTimeout(timer);
     }
-}());
-setInterval('word()',200);
+},200);
 }
 function random(max,min){
     return Math.round(Math.random()*(max - min) + min);
