@@ -1,0 +1,32 @@
+body{
+    background:#000;
+    overflow: hidden;
+}
+.moon{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    /* background:rgb(238, 238, 212); */
+    position: relative;
+    float:right;
+    background: linear-gradient(white,rgb(238, 238, 212));
+    box-shadow: 3px 3px 10px rgb(238, 238, 212),-3px -3px 10px rgb(238, 238, 212);
+}
+.fire{
+    position:absolute;
+    width:4px;
+    height:30px;
+    background: white;
+}
+#derve{
+    margin:50px;
+    display: flex;
+    width:200px;
+    height:400px;
+    color:rgb(43, 255, 0);
+    text-shadow: 2px 2px 3px red;
+    flex-wrap: wrap;
+    z-index: 999;
+    font-size: 20px;
+    
+}
